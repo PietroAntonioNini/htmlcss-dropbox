@@ -44,10 +44,117 @@ nav div ul .button {
 
 /* Fine Nav */
 
+/* Inizio Section head */
+
 #section-head {
     height: 400px;
     background-color: #B4D0E7;
     /* test */
     max-width: 100vw;
+    margin-bottom: 100px;
 }
 
+#section-head > div {
+    border: 1px solid red;
+    /* test */
+
+    max-width: 700px;
+    margin: auto;
+    padding-top: 70px;
+}
+
+#section-head div h1 {
+    border: 1px solid red;
+    height: 50px;
+    /* test */
+    max-width: 500px;
+    margin-bottom: 50px;
+}
+
+#section-head div div {
+    display: flex;
+}
+
+#section-head .text {
+    border: 1px solid red;
+    height: 200px;
+    /* test */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#section-head .img img {
+    border: 1px solid blue;
+    height: 200px;
+    /* test */
+    width: 400px;
+}
+/* Fine Section head */
+
+/* Inizio Main */
+
+main {
+    border: 2px solid red;
+    /* test */
+    max-width: 700px;
+    margin: auto;
+}
+
+main h2 {
+    border: 1px solid blue;
+    height: 40px;
+    /* test */
+    margin-bottom: 40px;
+}
+
+#input {
+    border: 1px solid blue;
+    /* test */
+    margin-bottom: 30px;
+}
+
+#column {
+    border: 1px solid blue;
+    height: 600px;
+    /* test */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+#column div {
+    border: 1px solid pink;
+    width: 200px;
+    height: 500px;
+    /* test */
+}
+
+#row {
+    border: 1px solid blue;
+    height: 150px;
+    /* test */
+    margin-bottom: 100px;
+}
+
+#partner {
+    border: 1px solid blue;
+    height: 300px;
+    /* test */
+    display: flex;
+    margin-bottom: 100px;
+}
+
+#partner .img {
+    border: 1px dashed pink;
+    height: 100%;
+    /* test */
+    width: 400px;
+}
+
+#partner .text {
+    border: 1px dashed gray;
+    height: 100%;
+    /* test */
+    flex-grow: 1;
+}
