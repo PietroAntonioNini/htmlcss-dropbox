@@ -47,7 +47,6 @@ nav div ul .button {
 /* Inizio Section head */
 
 #section-head {
-    height: 400px;
     background-color: #B4D0E7;
     /* test */
     max-width: 100vw;
@@ -55,58 +54,77 @@ nav div ul .button {
 }
 
 #section-head > div {
-    border: 1px solid red;
-    /* test */
-
-    max-width: 700px;
+    max-width: 1200px;
     margin: auto;
     padding-top: 70px;
 }
 
 #section-head div h1 {
-    border: 1px solid red;
-    height: 50px;
-    /* test */
-    max-width: 500px;
-    margin-bottom: 50px;
+    max-width: 1000px;
+
+    font-size: 60px;
+    font-weight: 800;
 }
 
 #section-head div div {
     display: flex;
+
+    position: relative;
+    bottom: -38px;
+
+    font-weight: 400;
 }
 
 #section-head .text {
-    border: 1px solid red;
-    height: 200px;
-    /* test */
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    align-items: flex-start;
+    gap: 34px;
+
+    width: 30%;
+}
+
+#section-head .text a {
+    padding: 10px;
+
+    text-decoration: none;
+
+    background-color: #0061FF;
+    color: white;
+}
+
+#section-head .text .fa {
+    margin-top: 50px;
+    font-size: 46px;
+}
+
+#section-head .img {
+    width: 70%;
 }
 
 #section-head .img img {
-    border: 1px solid blue;
-    height: 200px;
-    /* test */
-    width: 400px;
+    width: 100%;
 }
+
 /* Fine Section head */
 
 /* Inizio Main */
 
-main {
+.container {
     border: 2px solid red;
     /* test */
     max-width: 700px;
-    margin: auto;
+    margin: 0 auto 100px;
 }
 
-main h2 {
+h2 {
     border: 1px solid blue;
     height: 40px;
     /* test */
     margin-bottom: 40px;
 }
+
+/* Inizio Prima Sezione */
 
 #input {
     border: 1px solid blue;
@@ -124,7 +142,7 @@ main h2 {
 }
 
 #column div {
-    border: 1px solid pink;
+    border: 0.5px solid lightgray;
     width: 200px;
     height: 500px;
     /* test */
@@ -158,3 +176,81 @@ main h2 {
     /* test */
     flex-grow: 1;
 }
+
+/* Fine Prima Sezione */
+
+/* Inizio Seconda Sezione */
+
+section .box {
+    border: 1px solid gray;
+    /* test */
+
+    margin-bottom: 100px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.box div {
+    border: 1px solid blue;
+    height:300px;
+    /* test */
+
+    width: calc(100% / 3 - 50px * 2 / 3);
+}
+
+/* Inizio Seconda Sezione */
+
+/* Inizio bottom-row */
+
+#bottom-row {
+    border: 1px solid blue;
+    height: 180px;
+    /* test */
+}
+
+/* Fine bottom-row */
+
+#box-images {
+    display: flex;
+}
+
+#left-square, #description, #right-square {
+    border: 1px solid gray;
+    /* test */
+
+    display: flex;
+    flex-wrap: wrap;
+
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+}
+
+.square {
+    border: 1px solid black;
+    /* test */
+
+    width: 50%;
+    height: 50%;
+}
+
+#bottom-square {
+    border: 1px solid blue;
+    height: 200px;
+    /* test */
+
+    width: 100vw;
+    margin-bottom: 100px;
+}
+
+/* Inizio footer */
+
+footer {
+    width: 100vw;
+
+    background-color: black;
+}
+
+/* Fine footer */
+
