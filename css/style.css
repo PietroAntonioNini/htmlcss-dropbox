@@ -407,19 +407,23 @@ section .box {
 .box div .text h3 {
     padding-bottom: 20px
 }
- 
 
-/* Inizio Seconda Sezione */
+/* Fine Seconda Sezione */
+
+
+
 
 /* Inizio bottom-row */
 
 #bottom-row {
-    border: 1px solid blue;
-    height: 180px;
-    /* test */
+    max-width: 500px;
 }
 
 /* Fine bottom-row */
+
+
+
+/* Inizio Box delle immagini */
 
 #box-images {
     display: flex;
