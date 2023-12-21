@@ -118,8 +118,6 @@ nav div ul .button {
 /* Inizio Main */
 
 .container {
-    border: 2px solid red;
-    /* test */
     max-width: 1000px;
     margin: 0 auto 100px;
 }
@@ -430,9 +428,6 @@ section .box {
 }
 
 #left-square, #description, #right-square {
-    border: 1px solid gray;
-    /* test */
-
     display: flex;
     flex-wrap: wrap;
 
@@ -441,21 +436,137 @@ section .box {
 }
 
 .square {
-    border: 1px solid black;
-    /* test */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     width: 50%;
     height: 50%;
 }
 
-#bottom-square {
-    border: 1px solid blue;
-    height: 200px;
-    /* test */
+.square.one {
+    box-sizing: border-box;
 
+    border: 10px solid #D1E9CD;
+    background-color: #A2D39B;
+}
+
+.square.two {
+    background-color: #61082B;
+}
+
+.square.three {
+    background-color: #0093CE;
+}
+
+.square.four {
+    background-color: #FF1C1C;
+}
+
+.square.five {
+    background-color: #D5001F;
+}
+
+.square.six {
+    background-color: #B4D0E7;
+}
+
+.square.seven {
+    background-color: #0D2481;
+}
+
+.square.eight {
+    background-color: #FFD830;
+}
+
+.square img {
+    width: 50%;
+
+    filter: invert(1);
+}
+
+#description {
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px;
+
+    font-size: 11px;
+
+    background-color: #F5F5F5;
+}
+
+#description img {
+    width: 50%;
+
+    padding-bottom: 30px;
+}
+
+#description hr {
+    width: 20%;
+}
+
+#description p, #description span {
+    padding-top: 30px;
+}
+
+#bottom-square {
     width: 100vw;
     margin-bottom: 100px;
+
+    background-color: #B4D0E7;
 }
+
+#bottom-square .container.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    padding: 70px 0;
+}
+
+.container.bottom h2 {
+    width: 40%;
+    margin: 0;
+
+    color: #61082B;
+}
+
+.container.bottom .button {
+    padding: 8px 30px;
+    align-self: flex-start;
+
+    font-size: 14px;
+    text-decoration: none;
+
+    color: black;
+    background-color: #FFFFFF;
+}
+/* Fine Box delle immagini */
+
+
+
+
+/* Inizio container in fondo */
+
+.row-option {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px 20px 20px 0;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+/* Fine container in fondo */
+
 
 /* Inizio footer */
 
