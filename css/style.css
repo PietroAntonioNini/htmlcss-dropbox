@@ -361,7 +361,7 @@ h3 {
 
     color: black;
     border: 1px solid black;
-} 
+}
 
 /* Fine Partner */
 
@@ -560,12 +560,8 @@ section .box {
     font-weight: 700;
 }
 
-
-
-
-
-
 /* Fine container in fondo */
+
 
 
 /* Inizio footer */
@@ -574,6 +570,57 @@ footer {
     width: 100vw;
 
     background-color: black;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-around;
+    gap: 90px;
+    
+    padding: 100px;
+}
+
+.container-footer .footer-column {
+    display: flex;
+    flex-direction: column;
+
+    max-width: calc(100% / 5);
+}
+
+.container-footer .footer-column h4 {
+    padding-bottom: 15px;
+
+    color: white;
+}
+
+.container-footer .footer-column a {
+    padding-bottom: 10px;
+
+    font-size: 14px;
+    text-decoration: none;
+
+    color: white;
+}
+
+footer hr {
+    margin-left: 130px;
+    width: 100px;
+}
+
+#languages {
+    display: flex;
+    align-items: baseline;
+
+    padding: 50px 0 50px 130px;
+
+    color: gray;
+}
+
+#languages span {
+    padding-right: 5px;
+    padding-left: 5px;
+
+    font-size: 14px;
 }
 
 /* Fine footer */
