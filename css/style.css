@@ -9,34 +9,43 @@
 /* Inizio Nav */
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     max-width: 100vw;
+
+    position: fixed;
+    top: 0px;
+    right: 0;
+    left: 0;
+    z-index: 1;
+
+    background-color: white;
 }
 
-nav div ul {
+#navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar div ul {
     display: flex;
     list-style-type: none;
 }
 
-nav div ul li {
+#navbar div ul li {
     padding: 10px 10px 15px;
 }
 
-nav div ul li img {
+#navbar div ul li img {
     width: 80px;
     vertical-align: bottom;
 }
 
-nav div ul li a {
+#navbar div ul li a {
     font-size: 12px;
     text-decoration: none;
     color: black;
 }
 
-nav div ul .button {
+#navbar div ul .button {
     padding: 3px 8px;
 
     color: white;
@@ -442,18 +451,21 @@ section .box {
 
     width: 50%;
     height: 50%;
+
+    transition: .3s;
+}
+
+.square:hover {
+    border: 10px solid rgba(255, 255, 255, 0.5);
 }
 
 .square.one {
     box-sizing: border-box;
 
-    border: 10px solid #D1E9CD;
+    border: 10px solid rgba(255, 255, 255, 0.5);
     background-color: #A2D39B;
 }
 
-.square.two {
-    background-color: #61082B;
-}
 
 .square.three {
     background-color: #0093CE;
@@ -573,27 +585,32 @@ footer {
 }
 
 .container-footer {
-    display: flex;
-    justify-content: space-around;
-    gap: 90px;
-    
-    padding: 100px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.container-footer .footer-column {
+.container-column {
+    display: flex;
+    justify-content: space-between;  
+    
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container-column .footer-column {
     display: flex;
     flex-direction: column;
 
     max-width: calc(100% / 5);
 }
 
-.container-footer .footer-column h4 {
+.container-column .footer-column h4 {
     padding-bottom: 15px;
 
     color: white;
 }
 
-.container-footer .footer-column a {
+.container-column .footer-column a {
     padding-bottom: 10px;
 
     font-size: 14px;
@@ -602,8 +619,7 @@ footer {
     color: white;
 }
 
-footer hr {
-    margin-left: 130px;
+.container-footer hr {
     width: 100px;
 }
 
@@ -611,7 +627,7 @@ footer hr {
     display: flex;
     align-items: baseline;
 
-    padding: 50px 0 50px 130px;
+    padding: 50px 0;
 
     color: gray;
 }
