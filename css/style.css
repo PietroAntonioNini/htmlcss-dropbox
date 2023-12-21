@@ -50,7 +50,7 @@ nav div ul .button {
     background-color: #B4D0E7;
     /* test */
     max-width: 100vw;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 #section-head > div {
@@ -94,7 +94,7 @@ nav div ul .button {
 }
 
 #section-head .text .fa {
-    margin-top: 50px;
+    margin-top: 40px;
     font-size: 46px;
 }
 
@@ -113,40 +113,151 @@ nav div ul .button {
 .container {
     border: 2px solid red;
     /* test */
-    max-width: 700px;
+    max-width: 1000px;
     margin: 0 auto 100px;
 }
 
 h2 {
-    border: 1px solid blue;
-    height: 40px;
-    /* test */
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+
+    font-size: 30px;
+    font-weight: 700;
 }
 
 /* Inizio Prima Sezione */
 
-#input {
-    border: 1px solid blue;
-    /* test */
-    margin-bottom: 30px;
+#input input:nth-of-type(2) {
+    margin-left: 40px;
 }
 
-#column {
-    border: 1px solid blue;
-    height: 600px;
-    /* test */
+/* Colonne */
+
+#columns {
     display: flex;
     justify-content: space-between;
+    gap: 50px;
+
+    margin-top: 40px;
     margin-bottom: 30px;
 }
 
-#column div {
+.column {
+    width: calc(100% / 3 - 50px * 2 / 3);
+
     border: 0.5px solid lightgray;
-    width: 200px;
-    height: 500px;
-    /* test */
 }
+
+.col-title {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    padding: 10px;
+
+    font-size: 15px;
+    border-bottom: 1px solid lightgray;
+}
+
+.col-title i {
+    position: relative;
+    top: 2px;
+
+    padding-right: 5px;
+
+    font-size: 18px;
+}
+
+.col-text {
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px 30px;
+}
+
+.col-text h3 {
+    margin-bottom: 25px;
+    font-size: 23px;
+}
+
+.col-text .price {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    margin-bottom: 40px;
+}
+
+.price .amount {
+    font-weight: 700;
+}
+
+.price .gray {
+    color: gray;
+}
+
+.billing-type {
+    font-size: 14px;
+}
+
+.billing-type .space {
+    display: flex;
+    align-items: baseline;
+
+    padding-top: 20px;
+}
+
+.billing-type i {
+    padding-right: 4px;
+    font-size: 16px;
+}
+
+.billing-type .share {
+    display: flex;
+    align-items: baseline;
+
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.col-text .buttons {
+    padding: 10px;
+    margin-bottom: 35px;
+
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+
+    color: white;
+    background-color: #0061FF;
+}
+
+.option .buy-now {
+    color: #1B1BF0;
+}
+
+.col-text hr {
+    width: 55px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.highlights {
+    font-size: 14px;
+}
+
+.highlights .blue-tick {
+    display: flex;
+    align-items: baseline;
+
+    margin-top: 20px;
+}
+
+.blue-tick .fa {
+    margin-right: 4px;
+    color: #0061FF;
+}
+
+/* Fine Colonne */
 
 #row {
     border: 1px solid blue;
